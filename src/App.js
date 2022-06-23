@@ -1,21 +1,31 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import "./index.css";
-import Home from "./components/Home";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import HeroSection from "./components/HeroSection";
+import WhatWeDo from "./components/WhatWeDo";
+import Portfolio from "./components/Portfolio";
+import InfoSection from "./components/InfoSection";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
+import Drawer from "./components/Drawer";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/hakkimda" element={<About />} />
-        <Route path="/iletisim" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Drawer>
+        <Header/>
+        <div>
+          <HeroSection />
+          <WhatWeDo />
+          <Portfolio />
+          <InfoSection />
+          <About />
+          <Blog />
+          <Footer />
+        </div>
+      </Drawer>
+    </>
   );
 };
 

@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
+import Drawer from "./Drawer";
 import "./style.css";
 const Header = () => {
   return (
-    <div className="navbar h-20 bg-black fixed top-0 z-50">
+    <div className="navbar h-20 bg-black fixed top-0 z-50 drawer">
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl">My Portfolio</a>
       </div>
@@ -61,7 +62,7 @@ const Header = () => {
           Blog
         </Link>
       </div>
-      <button className="btn btn-square btn-ghost  md:hidden">
+      <label  htmlFor="my-drawer-4" className="drawer-button btn btn-square btn-ghost md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -75,7 +76,7 @@ const Header = () => {
               d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
             />
           </svg>
-        </button>
+        </label>
       {/* <div className="flex-none gap-5">
         <NavLink
           to={"/"}
