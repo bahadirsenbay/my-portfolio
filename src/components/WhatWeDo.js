@@ -26,15 +26,15 @@ const WhatWeDo = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col xs:px-4 md:px-8 lg:items-center justify-center col-span-2 content-container bg-pink-600">
+        <div className="flex flex-col xs:px-4 md:px-8 lg:items-center justify-center col-span-2 lg:content-container bg-pink-600">
           <div className="flex flex-col gap-10">
             <div className="px-2">
-              <p className="font-light text-white text-3xl">
+              <p className="font-light text-white text-2xl lg:text-3xl">
                 Our modest list of services to <br /> suit all your digital
                 needs
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-8 xl:gap-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 xl:gap-16">
               <div className="flex items-center justify-center gap-5">
                 <TbDiamond className="text-white" fontSize={75} />
                 <div className="flex flex-col gap-2">

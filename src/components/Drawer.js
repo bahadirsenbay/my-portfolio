@@ -64,7 +64,8 @@ const Drawer = ({ open, setOpen }) => {
             className="nav-link"
             activeClass="active"
             to="whatwedo"
-            spy={true}
+            onClick={() => setIsOpen(!isOpen)}
+              spy={true}
             smooth={true}
             duration={700}
           >
