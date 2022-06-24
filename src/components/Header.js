@@ -1,9 +1,9 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
-import Drawer from "./Drawer";
 import "./style.css";
+import Drawer from "./Drawer"
 const Header = () => {
+  const [open, setOpen] = useState(true)
   return (
     <div className="navbar h-20 bg-black fixed top-0 z-50 drawer">
       <div className="flex-1">
@@ -62,21 +62,7 @@ const Header = () => {
           Blog
         </Link>
       </div>
-      <label  htmlFor="my-drawer-4" className="drawer-button btn btn-square btn-ghost md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="inline-block w-5 h-5 stroke-current"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
-            />
-          </svg>
-        </label>
+        <Drawer /> 
       {/* <div className="flex-none gap-5">
         <NavLink
           to={"/"}
